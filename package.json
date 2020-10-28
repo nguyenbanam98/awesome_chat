@@ -1,0 +1,12 @@
+{
+  "name": "awesome_chat",
+  "version": "1.0.0",
+  "description": "Awesome Chat",
+  "main": "server.js",
+  "repository": "https://github.com/nguyenbanam98/awesome_chat.git",
+  "author": "Nam Nguyen",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
