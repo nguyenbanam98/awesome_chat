@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "description": "Awesome Chat",
   "main": "server.js",
+  "scripts": {
+    "start": "babel-node  server.js"
+  },
   "repository": "https://github.com/nguyenbanam98/awesome_chat.git",
   "author": "Nam Nguyen",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.7.0"
   }
 }
