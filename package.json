@@ -4,13 +4,15 @@
   "description": "Awesome Chat",
   "main": "server.js",
   "scripts": {
-    "start": "babel-node  server.js"
+    "start": "babel-node  src/server.js"
   },
   "repository": "https://github.com/nguyenbanam98/awesome_chat.git",
   "author": "Nam Nguyen",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
