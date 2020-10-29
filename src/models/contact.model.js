@@ -13,4 +13,10 @@ const Contact = new Schema(
   }
 );
 
+Contact.statics = {
+  createNew(item) {
+    return this.create(item);
+  }
+};
+
 module.exports = mongoose.model("contact", Contact);
