@@ -1,8 +1,11 @@
 import mongoose from 'mongoose';
+import bluebird from 'bluebird';
 
 async function connect() {
   try {
-    await mongoose.connect('mongodb://localhost:27017/awesome_chat', {
+    mongoose.Promise = bluebird;
+    let URI = `${process.env.DB_CONNECTION}://${process.env.DB_HOST}:${process.env.DB_PORT}/${process.env.DB_NAME}`;
+    await mongoose.connect(URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
